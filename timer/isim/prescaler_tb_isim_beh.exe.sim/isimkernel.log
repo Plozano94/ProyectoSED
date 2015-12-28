@@ -1,0 +1,29 @@
+Command line:
+   prescaler_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44406
+
+Mon Dec 28 10:20:48 2015
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 195.985 Meg
+
+ Total Signals          : 4
+ Total Nets             : 2
+ Total Signal Drivers   : 2
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 3
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 487
+Total Line Count : 13
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 271.487 Meg
+
+Mon Dec 28 10:22:07 2015
+

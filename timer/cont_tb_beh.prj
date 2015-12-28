@@ -1,0 +1,2 @@
+vhdl work "cont.vhd"
+vhdl work "cont_tb.vhd"

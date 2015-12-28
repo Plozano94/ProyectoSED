@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/pablo/timer/timer.xst" -ofn "/home/pablo/timer/timer.syr" 
