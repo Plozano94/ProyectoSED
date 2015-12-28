@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/pablo/timer/cont_tb_isim_beh.exe" -prj "/home/pablo/timer/cont_tb_beh.prj" "work.cont_tb" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/pablo/timer/mux_tb_isim_beh.exe" -prj "/home/pablo/timer/mux_tb_beh.prj" "work.mux_tb" 

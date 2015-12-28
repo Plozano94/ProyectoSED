@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/pablo/timer/cont_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pablo/timer/cont_tb_isim_beh.wdb 
+Running: /home/pablo/timer/mux_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pablo/timer/mux_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -28,4 +28,10 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+
+** Failure:Fin de la simulacion
+User(VHDL) Code Called Simulation Stop
+In process mux_tb.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
 # exit 0
