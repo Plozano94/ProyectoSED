@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/pablo/timer/mux_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pablo/timer/mux_tb_isim_beh.wdb 
+Running: /home/pablo/timer/top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pablo/timer/top_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -27,11 +27,7 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /top_tb/uut/Inst_post_div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-
-** Failure:Fin de la simulacion
-User(VHDL) Code Called Simulation Stop
-In process mux_tb.vhd:stim_proc 
- 
-INFO: Simulator is stopped.
+# run 2.00us
 # exit 0

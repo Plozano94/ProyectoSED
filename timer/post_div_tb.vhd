@@ -93,9 +93,10 @@ BEGIN
 		ent<=std_logic_vector( to_unsigned(15,ent'length));
       wait for clock_period*10;
 
-      -- insert stimulus here 
+    assert false
+	 report "Fin de la simulacion"
+	 severity failure;
 
-      wait;
    end process;
 
 END;

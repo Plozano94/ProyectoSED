@@ -85,31 +85,84 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
      	
-		wait for 100 ns;	
+		wait for 5 ns;	
 		ent_prescaler<='0';
 		for x in 0 to 3 loop
-			wait for 10 ns;
+			wait for 1 ns;
 			ent<='1';
-			wait for 10 ns;
+			wait for 1 ns;
 			ent<='0';
 		end loop;	
 		ent_prescaler<='1';
-		wait for 30 ns;
+		wait for 10 ns;
 		ent_prescaler<='0';
-		wait for 30 ns;
-		for x in 0 to 20 loop
-			wait for 10 ns;
+		wait for 10 ns;
+		for x in 0 to 15 loop
+			wait for 1 ns;
 			ent<='1';
-			wait for 10 ns;
+			wait for 1 ns;
+			ent<='0';
+		end loop;	
+		ent_prescaler<='1';
+		wait for 10 ns;
+		ent_prescaler<='0';
+		wait for 10 ns;
+		for x in 0 to 63 loop
+			wait for 1 ns;
+			ent<='1';
+			wait for 1 ns;
+			ent<='0';
+		end loop;	
+		ent_prescaler<='1';
+		wait for 10 ns;
+		ent_prescaler<='0';
+		wait for 10 ns;
+		for x in 0 to 127 loop
+			wait for 1 ns;
+			ent<='1';
+			wait for 1 ns;
+			ent<='0';
+		end loop;	
+		ent_prescaler<='1';
+		wait for 10 ns;
+		ent_prescaler<='0';
+		for x in 0 to 255 loop
+			wait for 1 ns;
+			ent<='1';
+			wait for 1 ns;
+			ent<='0';
+		end loop;	
+		ent_prescaler<='1';
+		wait for 10 ns;
+		ent_prescaler<='0';
+		for x in 0 to 1023 loop
+			wait for 1 ns;
+			ent<='1';
+			wait for 1 ns;
+			ent<='0';
+		end loop;	
+		ent_prescaler<='1';
+		wait for 10 ns;
+		ent_prescaler<='0';
+		for x in 0 to 4095 loop
+			wait for 1 ns;
+			ent<='1';
+			wait for 1 ns;
 			ent<='0';
 		end loop;	
 		ent_prescaler<='1';
 
       wait for clock_period*10;
-
-      -- insert stimulus here 
-
-      wait;
-   end process;
+		
+	 assert false
+	 report "Fin de la simulacion"
+	 severity failure;
+   
+     
+    
+	
+   
+   
+	end process;
 
 END;

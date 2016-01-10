@@ -95,19 +95,20 @@ BEGIN
 		ent<=std_logic_vector( to_unsigned(500000,sal'length));
 		wait for 100 ns;	
 		sel3<='1';
-		ent<=std_logic_vector( to_unsigned(500000,sal'length));
 		wait for 100 ns;	
 		sel2<='1';
-		ent<=std_logic_vector( to_unsigned(500000,sal'length));
 		wait for 100 ns;	
 		sel1<='1';
 		wait for 100 ns;
 
       wait for clock_period*10;
 		
-      -- insert stimulus here 
+    assert false
+	 report "Fin de la simulacion"
+	 severity failure;
 
-      wait;
+   
+	 
    end process;
 
 END;

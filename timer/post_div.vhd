@@ -31,7 +31,7 @@ USE ieee.numeric_std.ALL;
 --use UNISIM.VComponents.all;
 
 entity post_div is
-generic(width:integer:=7071);
+generic(width:integer:=25);
 	port(
 			ent: in std_logic_vector(width downto 0);
 			dig1: out std_logic_vector (3 downto 0);

@@ -2,6 +2,10 @@
 -- Company: 
 -- Engineer:
 --
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
 -- Create Date:   09:46:08 12/21/2015
 -- Design Name:   
 -- Module Name:   /home/pablo/timer/prescaler_tb.vhd
@@ -83,9 +87,10 @@ BEGIN
 
       wait for clk_period*10;
 
-      -- insert stimulus here 
-
-      wait;
+    assert false
+	 report "Fin de la simulacion"
+	 severity failure;
+	 
    end process;
 
 END;
