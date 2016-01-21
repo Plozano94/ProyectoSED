@@ -1,0 +1,7 @@
+vhdl work "C:\Users\sed\Desktop\prueba\timer\prescalersimple.vhd"
+vhdl work "C:\Users\sed\Desktop\prueba\timer\prescaler.vhd"
+vhdl work "C:\Users\sed\Desktop\prueba\timer\post_div.vhd"
+vhdl work "C:\Users\sed\Desktop\prueba\timer\mux.vhd"
+vhdl work "C:\Users\sed\Desktop\prueba\timer\decoder.vhd"
+vhdl work "C:\Users\sed\Desktop\prueba\timer\cont.vhd"
+vhdl work "C:\Users\sed\Desktop\prueba\timer\top.vhd"

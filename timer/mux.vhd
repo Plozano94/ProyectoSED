@@ -58,6 +58,7 @@ ARCHITECTURE behavioral OF mux IS
 					sel_mux<= sel_mux + 1;
 				end if;
 			end if;
+			--SEGUN EL ESTADO,SELECCIONAS EL DISPLAY Y CAMBIAS EL DÍGITO A REPRESENTAR
          CASE sel_mux IS
 				WHEN "00" => 
 						digctrl <= "1110";
@@ -73,7 +74,7 @@ ARCHITECTURE behavioral OF mux IS
 						num <= dig1;
 				WHEN OTHERS => 
 						digctrl <= (others => '0');
-						num <= "1111";
+						num <= "0000";
          END CASE;
 
        END PROCESS;

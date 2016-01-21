@@ -1,0 +1,40 @@
+# PlanAhead Generated IO constraints 
+
+NET "digctrl_gl[3]" IOSTANDARD = LVCMOS33;
+NET "digctrl_gl[2]" IOSTANDARD = LVCMOS33;
+NET "digctrl_gl[1]" IOSTANDARD = LVCMOS33;
+NET "digctrl_gl[0]" IOSTANDARD = LVCMOS33;
+NET "num_gl[6]" IOSTANDARD = LVCMOS33;
+NET "num_gl[5]" IOSTANDARD = LVCMOS33;
+NET "num_gl[4]" IOSTANDARD = LVCMOS33;
+NET "num_gl[3]" IOSTANDARD = LVCMOS33;
+NET "num_gl[2]" IOSTANDARD = LVCMOS33;
+NET "num_gl[1]" IOSTANDARD = LVCMOS33;
+NET "num_gl[0]" IOSTANDARD = LVCMOS33;
+NET "clk_gl" IOSTANDARD = LVCMOS33;
+NET "sel1_gl" IOSTANDARD = LVCMOS33;
+NET "sel2_gl" IOSTANDARD = LVCMOS33;
+NET "sel3_gl" IOSTANDARD = LVCMOS33;
+NET "ent_gl" IOSTANDARD = LVCMOS33;
+NET "sel3_gl" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+
+# PlanAhead Generated physical constraints 
+
+NET "digctrl_gl[0]" LOC = D14;
+NET "digctrl_gl[1]" LOC = G14;
+NET "digctrl_gl[2]" LOC = F14;
+NET "digctrl_gl[3]" LOC = E13;
+NET "num_gl[0]" LOC = N16;
+NET "num_gl[1]" LOC = F13;
+NET "num_gl[2]" LOC = R16;
+NET "num_gl[3]" LOC = P15;
+NET "num_gl[4]" LOC = N15;
+NET "num_gl[5]" LOC = G13;
+NET "num_gl[6]" LOC = E14;
+NET "clk_gl" LOC = T9;
+NET "sel1_gl" LOC = F12;
+NET "sel2_gl" LOC = G12;
+NET "sel3_gl" LOC = H14;
+NET "ent_gl" LOC = T8;

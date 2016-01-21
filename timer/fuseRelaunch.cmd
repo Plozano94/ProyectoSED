@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/pablo/timer/top_tb_isim_beh.exe" -prj "/home/pablo/timer/top_tb_beh.prj" "work.top_tb" 
+-intstyle "ise" -incremental -o "C:/Users/Pablo Lozano/Desktop/SED/timer/post_div_tb_isim_beh.exe" -prj "C:/Users/Pablo Lozano/Desktop/SED/timer/post_div_tb_beh.prj" "work.post_div_tb" 

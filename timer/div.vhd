@@ -25,9 +25,9 @@ begin
 		if sel1 = '1' then
 			sal<=ent;
 		elsif sel2='1' then
-			sal<= std_logic_vector( to_unsigned((to_integer(unsigned(ent))/1000),sal'length));
+			sal<= std_logic_vector( to_unsigned((to_integer(unsigned(ent))*(1024/1000)/1024),sal'length));
 		elsif sel3='1' then
-			sal<= std_logic_vector( to_unsigned((to_integer(unsigned(ent))/1000000),sal'length));
+			sal<= std_logic_vector( to_unsigned((to_integer(unsigned(ent))*(1024/1000000)/1024),sal'length));
 		end if;
 
 	

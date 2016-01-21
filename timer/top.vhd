@@ -1,22 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    18:15:30 12/31/2015 
--- Design Name: 
--- Module Name:    top - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -45,36 +26,36 @@ end top;
 architecture Behavioral of top is
 
 COMPONENT prescaler
-	generic(width:integer:=50000000);
 	PORT(
-		clk : IN std_logic;
-		sal: OUT std_logic
+			sal: out std_logic;
+			clk : in std_logic;
+			sel1: in std_logic;
+			sel2: in std_logic;
+			sel3: in std_logic
+	);
+END COMPONENT;
+COMPONENT prescalersimple 
+	generic(width:integer:=400);
+	PORT(
+			sal: out std_logic;
+			clk : in std_logic
 	);
 END COMPONENT;
 
 COMPONENT cont
 	generic(width:integer:=25);
 	PORT(
+		clk: in std_logic;
 		ent_prescaler : IN std_logic;
 		ent : IN std_logic;
 		sal: OUT std_logic_vector(width downto 0)
 		);
 END COMPONENT;
 
-COMPONENT div
-	generic(width:integer:=25);
-	PORT(
-		ent: IN std_logic_vector(width downto 0);
-		sel1: IN std_logic;
-		sel2: IN std_logic;
-		sel3: IN std_logic;
-		sal: OUT std_logic_vector (width downto 0)
-	);
-END COMPONENT;
-
 COMPONENT post_div
 	generic(width:integer:=25);
 	PORT(
+		clk : in std_logic;
 		ent : IN std_logic_vector(width downto 0);
 		dig1: OUT std_logic_vector (3 downto 0);
 		dig2: OUT std_logic_vector (3 downto 0);
@@ -102,48 +83,49 @@ COMPONENT decoder
  );
 END COMPONENT;
 
-signal signal_salpr, signal_salpr1 :std_logic;
-signal signal_salcont, signal_saldiv : std_logic_vector (25 downto 0);
+signal signal_salpr, signal_salprsmp1,signal_ent_post_div :std_logic;
+signal signal_salcont : std_logic_vector (25 downto 0);
 signal signal_dig1, signal_dig2, signal_dig3, signal_dig4, signal_digctrl, signal_salmux: std_logic_vector (3 downto 0);
 signal  signal_num : std_logic_vector (6 downto 0);
 begin
 
 Inst_prescaler: prescaler 
-	generic map (width => 40) 
 	PORT MAP(
 		clk => clk_gl,
-		sal => signal_salpr
+		sal => signal_salpr,
+		sel1 => sel1_gl,
+		sel2 => sel2_gl,
+		sel3 => sel3_gl
 	);
 
-Inst_prescaler1: prescaler 
-	generic map (width => 10)
+Inst_prescalersimple1: prescalersimple
+	generic map (width => 200)
 	PORT MAP (
 		clk => clk_gl,
-		sal => signal_salpr1
+		sal => signal_salprsmp1
+	);
+Inst_prescalersimple2: prescalersimple
+	generic map (width => 50000000)
+	PORT MAP (
+		clk => clk_gl,
+		sal => signal_ent_post_div
 	);
 
 Inst_cont: cont 
 	generic map (width => 25)
 	PORT MAP(
+		clk => clk_gl,
 		ent_prescaler => signal_salpr,
 		ent => ent_gl,
 		sal =>signal_salcont
 	);
 
-Inst_div: div 
-	generic map (width => 25)
-	PORT MAP(
-		ent => signal_salcont,
-		sel1 => sel1_gl,
-		sel2 => sel2_gl,
-		sel3 => sel3_gl,
-		sal => signal_saldiv
-	);
 
 Inst_post_div: post_div 
 	generic map (width => 25)
 	PORT MAP(
-		ent=> signal_saldiv,
+		clk => signal_ent_post_div,
+		ent=> signal_salcont,
 		dig1 => signal_dig1,
 		dig2 => signal_dig2,
 		dig3 => signal_dig3,
@@ -152,7 +134,7 @@ Inst_post_div: post_div
 
 Inst_mux: mux 
 	PORT MAP(
-		clk => signal_salpr1,
+		clk => signal_salprsmp1,
 		dig1 => signal_dig1,
 		dig2 => signal_dig2,
 		dig3 => signal_dig3,

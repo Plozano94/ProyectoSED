@@ -46,7 +46,7 @@ ARCHITECTURE behavior OF top_tb IS
          sel1_gl : IN  std_logic;
          sel2_gl : IN  std_logic;
          sel3_gl : IN  std_logic;
-         num_gl : OUT  std_logic_vector(3 downto 0);
+         num_gl : OUT  std_logic_vector(6 downto 0);
          digctrl_gl : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
@@ -60,7 +60,7 @@ ARCHITECTURE behavior OF top_tb IS
    signal sel3_gl : std_logic := '0';
 
  	--Outputs
-   signal num_gl : std_logic_vector(3 downto 0);
+   signal num_gl : std_logic_vector(6 downto 0);
    signal digctrl_gl : std_logic_vector(3 downto 0);
 
    -- Clock period definitions
@@ -96,9 +96,9 @@ BEGIN
       wait for 100 ns;	
 		sel1_gl<='1';
 for x in 0 to 3 loop
-			wait for 1 ns;
+			wait for 30 ns;
 			ent_gl<='1';
-			wait for 1 ns;
+			wait for 30 ns;
 			ent_gl<='0';
 		end loop;	
       wait for clk_gl_period*10;

@@ -1,6 +1,1 @@
-work	"cont.vhd"
-work	"div.vhd"
-work	"mux.vhd"
-work	"post_div.vhd"
-work	"prescaler.vhd"
-work	"top.vhd"
+work	"prescalersimple.vhd"

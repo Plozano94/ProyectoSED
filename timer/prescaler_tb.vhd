@@ -1,37 +1,6 @@
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   09:46:08 12/21/2015
--- Design Name:   
--- Module Name:   /home/pablo/timer/prescaler_tb.vhd
--- Project Name:  timer
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
--- VHDL Test Bench Created by ISE for module: prescaler
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
---------------------------------------------------------------------------------
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -47,13 +16,19 @@ ARCHITECTURE behavior OF prescaler_tb IS
     COMPONENT prescaler
     PORT(
          sal : OUT  std_logic;
-         clk : IN  std_logic
+         clk : IN  std_logic;
+         sel1 : IN  std_logic;
+         sel2 : IN  std_logic;
+         sel3 : IN  std_logic
         );
     END COMPONENT;
     
 
    --Inputs
    signal clk : std_logic := '0';
+   signal sel1 : std_logic := '0';
+   signal sel2 : std_logic := '0';
+   signal sel3 : std_logic := '0';
 
  	--Outputs
    signal sal : std_logic;
@@ -66,7 +41,10 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: prescaler PORT MAP (
           sal => sal,
-          clk => clk
+          clk => clk,
+          sel1 => sel1,
+          sel2 => sel2,
+          sel3 => sel3
         );
 
    -- Clock process definitions
@@ -82,9 +60,17 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
+   
       -- hold reset state for 100 ns.
-      wait for 150000 ns;	
-
+      wait for 100 ns;	
+		sel3<='1';
+		wait for 100 ns;	
+		sel2<='1';
+		wait for 100 ns;	
+		sel2<='0';
+		sel3<='1';
+		sel1<='0';
+		wait for 2000 ns;
       wait for clk_period*10;
 
     assert false

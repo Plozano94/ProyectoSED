@@ -42,7 +42,8 @@ ARCHITECTURE behavior OF post_div_tb IS
  
     COMPONENT post_div
     PORT(
-         ent : IN  std_logic_vector(7071 downto 0);
+			clk : in std_logic;
+         ent : IN  std_logic_vector(25 downto 0);
          dig1 : OUT  std_logic_vector(3 downto 0);
          dig2 : OUT  std_logic_vector(3 downto 0);
          dig3 : OUT  std_logic_vector(3 downto 0);
@@ -52,22 +53,23 @@ ARCHITECTURE behavior OF post_div_tb IS
     
 
    --Inputs
-   signal ent : std_logic_vector(7071 downto 0) := (others => '0');
+   signal ent : std_logic_vector(25 downto 0) := (others => '0');
 
  	--Outputs
    signal dig1 : std_logic_vector(3 downto 0);
    signal dig2 : std_logic_vector(3 downto 0);
    signal dig3 : std_logic_vector(3 downto 0);
    signal dig4 : std_logic_vector(3 downto 0);
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
-	signal clock: std_logic;
+	signal clk : std_logic;
+
+	
    constant clock_period : time := 10 ns;
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: post_div PORT MAP (
+			 clk=>clk,
           ent => ent,
           dig1 => dig1,
           dig2 => dig2,
@@ -78,9 +80,9 @@ BEGIN
    -- Clock process definitions
    clock_process :process
    begin
-		clock <= '0';
+		clk <= '0';
 		wait for clock_period/2;
-		clock <= '1';
+		clk <= '1';
 		wait for clock_period/2;
    end process;
  

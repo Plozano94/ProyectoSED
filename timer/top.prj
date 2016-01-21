@@ -1,7 +1,7 @@
+vhdl work "prescalersimple.vhd"
 vhdl work "prescaler.vhd"
 vhdl work "post_div.vhd"
 vhdl work "mux.vhd"
-vhdl work "div.vhd"
 vhdl work "decoder.vhd"
 vhdl work "cont.vhd"
 vhdl work "top.vhd"

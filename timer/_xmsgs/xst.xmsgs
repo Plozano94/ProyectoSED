@@ -5,5 +5,129 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/sed/Desktop/prueba/timer/mux.vhd</arg>&quot; line <arg fmt="%d" index="2">74</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/sed/Desktop/prueba/timer/mux.vhd</arg>&quot; line <arg fmt="%d" index="2">52</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;sel_mux&gt;, &lt;dig4&gt;, &lt;dig3&gt;, &lt;dig2&gt;, &lt;dig1&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/sed/Desktop/prueba/timer/post_div.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: The result of a <arg fmt="%d" index="3">32</arg>x<arg fmt="%d" index="4">9</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">32</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/sed/Desktop/prueba/timer/post_div.vhd</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The result of a <arg fmt="%d" index="3">32</arg>x<arg fmt="%d" index="4">8</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">32</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/sed/Desktop/prueba/timer/post_div.vhd</arg>&quot; line <arg fmt="%d" index="2">52</arg>: The result of a <arg fmt="%d" index="3">26</arg>x<arg fmt="%d" index="4">10</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">32</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/sed/Desktop/prueba/timer/post_div.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: The result of a <arg fmt="%d" index="3">32</arg>x<arg fmt="%d" index="4">5</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">32</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">13 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_2&gt; &lt;pulse_3&gt; &lt;pulse_10&gt; &lt;pulse_11&gt; &lt;pulse_16&gt; &lt;pulse_18&gt; &lt;pulse_24&gt; &lt;pulse_26&gt; &lt;pulse_27&gt; &lt;pulse_28&gt; &lt;pulse_29&gt; &lt;pulse_30&gt; &lt;pulse_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_8&gt; &lt;pulse_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_12&gt; &lt;pulse_13&gt; &lt;pulse_17&gt; &lt;pulse_19&gt; &lt;pulse_20&gt; &lt;pulse_21&gt; &lt;pulse_22&gt; &lt;pulse_23&gt; &lt;pulse_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_5&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pulse_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">prev_ent_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">prev_pres_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">prev_ent_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">prev_pres_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pulse_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prescaler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_8&gt; &lt;pulse_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_12&gt; &lt;pulse_13&gt; &lt;pulse_17&gt; &lt;pulse_19&gt; &lt;pulse_20&gt; &lt;pulse_21&gt; &lt;pulse_22&gt; &lt;pulse_23&gt; &lt;pulse_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">prescaler</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse_5&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cont_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cont_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cont_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cont_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cont_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cont_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
 </messages>
 
